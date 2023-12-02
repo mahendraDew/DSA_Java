@@ -33,7 +33,7 @@ public class BTZigzagLvlOrderTrvrsl {
             List<Integer> currList = new ArrayList<>(lvlSize);
             for (int i = 0; i < lvlSize; i++) {
                 if(!reverse){
-                    //normal order
+                    //normal order - adding elements in normal order of BFS
                     TreeNode currNode = qDeque.pollFirst();
                     currList.add(currNode.val);
                     if(currNode.left != null){
@@ -44,7 +44,7 @@ public class BTZigzagLvlOrderTrvrsl {
                     }
                 }
                 else{
-                    //reverse order
+                    //reverse order - adding elements in rev order of BFS (rev order of that level)
                     TreeNode currNode = qDeque.pollLast();
                     currList.add(currNode.val);
                     if(currNode.right != null){
