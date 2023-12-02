@@ -28,7 +28,7 @@ The repository is organized into specific folders:
 - `Notes`: Detailed explanations and summaries of DSA topics.
 - `Code`: Implementations of algorithms, data structures, and coding solutions.
 - `Resources`: Curated references and materials aiding learning.
-- `Questions`: Queries and challenges seeking solutions or collaboration.
+- `Leetcode Ques`: Queries and challenges seeking solutions or collaboration.
 - `Neetcode 150`: Solutions of Neetcode 150 list.
 
 ## How to Use
@@ -55,6 +55,6 @@ This repository is a work in progress and will continuously evolve as I progress
 
 ## Get Started
 
-Feel free to explore the folders and dive into the contents! Start your journey by exploring the [Notes](/Notes), [Code](/Code), [Resources](/Resources), [Neetcode 150](/Neetcode150), or [Questions](/Questions) sections.
+Feel free to explore the folders and dive into the contents! Start your journey by exploring the [Notes](/Notes), [Code](/Code), [Resources](/Resources), [Neetcode 150](/Neetcode150), or [Leetcode Ques](/LeetcodeQues) sections.
 
 Happy learning! 🚀
