@@ -55,6 +55,6 @@ This repository is a work in progress and will continuously evolve as I progress
 
 ## Get Started
 
-Feel free to explore the folders and dive into the contents! Start your journey by exploring the [Notes](/Notes), [Code](/Code), [Resources](/Resources), [Neetcode 150](/Neetcode150), or [Leetcode Ques](/LeetcodeQues) sections.
+Feel free to explore the folders and dive into the contents! Start your journey by exploring the [Notes](/Notes), [Code](/Code), [Resources](/Resources), [Neetcode 150](/Neetcode-150), or [Leetcode Ques](/Leetcode-Ques) sections.
 
 Happy learning! 🚀
