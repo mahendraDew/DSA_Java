@@ -1,6 +1,11 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+
 class GroupAnagrams{
     public List<List<String>> groupAnagrams(String[] strs) {
-        Map<String, List<String>> map = new HashMap<>();
+        HashMap<String, List<String>> map = new HashMap<>();
         for(String word : strs){
             char[] wordArr = word.toCharArray();
             Arrays.sort(wordArr);
@@ -10,7 +15,8 @@ class GroupAnagrams{
             }
             map.get(newStr).add(word);
         }
-
+        
+        
         return new ArrayList<>(map.values());
     }
 }
