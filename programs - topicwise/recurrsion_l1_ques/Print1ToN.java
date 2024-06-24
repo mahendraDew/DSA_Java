@@ -13,3 +13,4 @@ public class Print1ToN {
         System.out.println(n);
     }
 }
+
