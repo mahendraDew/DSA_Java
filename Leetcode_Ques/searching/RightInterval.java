@@ -27,7 +27,7 @@ public class RightInterval {
                     if(minDiff > diff){
                         minDiff = diff;
                         result =  j;
-                    }int n = intervals.length;
+                    }
                 }
 
             }

@@ -1,6 +1,5 @@
 package Leetcode_Ques.sorting;
 
-import java.util.Arrays;
 
 public class HeightChecker {
     public static void main(String[] args) {

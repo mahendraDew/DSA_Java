@@ -1,6 +1,5 @@
 package LinkedList;
 
-import LinkedList.LL;
 
 
 public class Main {
