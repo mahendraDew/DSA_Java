@@ -1,6 +1,5 @@
 package Leetcode_Topicwise_Ques.String;
 
-import java.util.Arrays;
 
 public class ValidParentheses {
     public static void main(String[] args) {

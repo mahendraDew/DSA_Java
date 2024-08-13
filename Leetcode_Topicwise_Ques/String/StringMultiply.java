@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class StringMultiply {
     public static void main(String[] args) {
-        String num1 = "123";
-        String num2 = "456";    //56088
+        String num1 = "0";
+        String num2 = "0";    //56088
         System.out.println(multiply(num1, num2));
         
     }
@@ -31,19 +31,40 @@ public class StringMultiply {
         for(int i = 0; i<n1.length(); i++){
             for(int j = 0; j<n2.length(); j++){
                 int digit = (n1.charAt(i)-'0') * (n2.charAt(j)-'0');
-                System.out.println(digit);
+                // System.out.println(digit);
                 result[i+j] += digit%10;
+                int temp = result[i+j];
+                if(result[i+j] >9){
+                    result[i+j] = result[i+j]%10;
+                    result[i+j+1] += temp/10;
+                }
                 result[i+j+1] += digit/10;
                 digit /= 10;
-                StringBuilder sb  = new StringBuilder(result.length);
-                for (int element : result) {
-                    sb.append(element);
-                }
-                System.out.println(sb.reverse());
+                // StringBuilder sb  = new StringBuilder(result.length);
+                // for (int element : result) {
+                //     sb.append(element);
+                // }
+                // System.out.println(Arrays.toString(result));
+                // System.out.println(sb.reverse());
             }
         }
 
-        System.out.println(Arrays.toString(result));
-        return "tesing";
+        // System.out.println(Arrays.toString(result));//0057088
+        int index = -1;
+        for(int i = result.length-1; i>=0; i--){
+            if(result[i]!=0){
+                index = i;
+                break;
+            }
+        }
+        // System.out.println("index:" + index);
+        StringBuilder sb  = new StringBuilder();
+        for(int i = 0; i<=index; i++){
+            sb.append(result[i]);
+        }
+        // System.out.println(Arrays.toString(result));
+        // System.out.println(sb.reverse());
+        return sb.reverse().toString();
+        
     }
 }
