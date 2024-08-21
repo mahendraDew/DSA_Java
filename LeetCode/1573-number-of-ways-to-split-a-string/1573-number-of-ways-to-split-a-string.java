@@ -1,6 +1,6 @@
 class Solution {
     public int numWays(String s) {
-        char[] charr = s.toCharArray();
+       char[] charr = s.toCharArray();
         long one = 0;
         for(int i = 0; i<charr.length; i++){
             if(charr[i] == '1'){
@@ -31,6 +31,6 @@ class Solution {
                 part2++;
             }
         }
-        return (int)((part1*part2)%mod);
+        return (int)((part1*part2)%mod); 
     }
 }
