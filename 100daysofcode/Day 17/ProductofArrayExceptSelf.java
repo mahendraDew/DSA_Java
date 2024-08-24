@@ -1,7 +1,10 @@
 //238. Product of Array Except Self: https://leetcode.com/problems/product-of-array-except-self/
+
+import java.util.Arrays;
+
 class ProductofArrayExceptSelf{
     // #1 bruteforce app - O(n^2)
-    public int[] productExceptSelf(int[] nums) {
+    public int[] productExceptSelf1(int[] nums) {
         int[] ans = new int[nums.length];
         for(int i = 0; i < nums.length; i++){
             int prod = 1;
@@ -17,7 +20,7 @@ class ProductofArrayExceptSelf{
         return ans;
     }
     // #2 Dividing the curr num - O(n)  -- but gives err if we divide the ele by 0(which can happend)
-    public int[] productExceptSelf(int[] nums) {
+    public int[] productExceptSelf2(int[] nums) {
         int[] ans = new int[nums.length];
         int prod = 1;
         for(int i: nums){
