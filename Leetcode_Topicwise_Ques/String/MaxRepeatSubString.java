@@ -1,4 +1,3 @@
-package Leetcode_Topicwise_Ques.String;
 
 public class MaxRepeatSubString {
     public static void main(String[] args) {

@@ -1,4 +1,3 @@
-package Leetcode_Topicwise_Ques.String;
 
 public class FirstOccurrenceinString {
     public static void main(String[] args) {

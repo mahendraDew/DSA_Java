@@ -1,4 +1,3 @@
-package Leetcode_Topicwise_Ques.String;
 
 public class MinimumLengthofStringAfterDeletingSimilarEnds {
     public static void main(String[] args) {
