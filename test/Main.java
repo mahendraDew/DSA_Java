@@ -5,28 +5,13 @@ import java.util.*;
 
 class Main {
     public static void main(String[] args) {
-       int[] arr = new int[]{1,2,3,4};
-       int[] ans = product(arr);
-       System.out.println(Arrays.toString(ans));
-    } 
-    static int[] product(int[] arr){
-        int n = arr.length;
-        int[] ans = new int[n];
-        Arrays.fill(ans, 1);
-        int curr = 1;
-        for(int i = 0; i<n; i++){
-            ans[i] *= curr;
-            curr *= ans[i];
-        }
+       String[] arr = new String[]{"1","2","3"};
 
-        curr = 1; 
-        for(int i = n-1; i>=0; i--){
-            ans[i] *= curr;
-            curr *= ans[i];
-        }
-        
-
-        return ans;
+       int[] res = new int[arr.length];
+       for(int i = 0; i<arr.length; i++){
+        res[i] = Integer.valueOf(arr[i]);
+       }
+       System.out.println(Arrays.toString(arr));
+       System.out.println(Arrays.toString(res));
     }
-    
 }
