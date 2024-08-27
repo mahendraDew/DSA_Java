@@ -1,32 +1,18 @@
 class Solution {
-   static void helper(StringBuilder s, long arr[], char alpha[]){
-        for(int i=0; i<arr.length; i++){
-            long a = s.charAt(i)-97;
-            a = a+arr[i];
-            a=a%26;
-            s.replace(i,i+1,alpha[(int)a]+"");
-        }
-    }
-    public String shiftingLetters(String str, int[] arr) {
+    public String shiftingLetters(String s, int[] shifts) {
+        int length = shifts.length;
 
-        StringBuilder s = new StringBuilder(str);
-        char alpha[] = new char[26];
-        char ch = 'a';
+        char[] result = s.toCharArray();
 
-        for(int i=0; i<26; i++){
-            alpha[i] = ch;
-            ch++;
+        long sumValue = 0;
+
+        for (int i = length - 1; i > - 1; i--) {
+
+            sumValue += shifts[i];
+
+           result[i] = (char)((((result[i] - 'a') + sumValue ) % 26) + 'a');
         }
 
-        int n = arr.length;
-        long a[] = new long[n];
-        a[n-1] = arr[n-1];
-
-        for(int i=n-2; i>=0; i--){
-            a[i] = a[i+1]+arr[i];
-        }
-
-        helper(s,a,alpha);
-        return s.toString();
+        return String.valueOf(result);
     }
 }
