@@ -1,7 +1,6 @@
 package Leetcode_Topicwise_Ques.recursion;
 
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class GeekonacciNumber {
     public static void main (String[] args){
