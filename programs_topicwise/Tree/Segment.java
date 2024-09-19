@@ -103,9 +103,9 @@ public class Segment {
         int[] arr = {3,8,6,7,-2,-8,4,9};
         Segment tree = new Segment(arr);
         tree.display();
-        System.out.println(tree.query(1,6));
-        tree.update(4, 10);
-        tree.display();
-        System.out.println(tree.query(1, 6));
+        // System.out.println(tree.query(1,6));
+        // tree.update(4, 10);
+        // tree.display();
+        // System.out.println(tree.query(1, 6));
     }
 }

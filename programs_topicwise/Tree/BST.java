@@ -99,12 +99,12 @@ public class BST {
         tree.display();
         System.out.println(tree.balanced());
 
-        tree.preOrder();
-        System.out.println();
-        tree.inOrder();
-        System.out.println();
-        tree.postOrder();
-        System.out.println();
+        // tree.preOrder();
+        // System.out.println();
+        // tree.inOrder();
+        // System.out.println();
+        // tree.postOrder();
+        // System.out.println();
     }
 
 

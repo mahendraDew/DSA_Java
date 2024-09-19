@@ -1,4 +1,4 @@
-package programs_topicwise.recurrsion_backtracking;
+package recurrsion_backtracking;
 
 public class StringPermutation {
     public static void main(String[] args) {

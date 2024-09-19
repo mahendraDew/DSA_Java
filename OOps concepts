@@ -1,0 +1,145 @@
+----------------OOPs 1--------------------
+________________Introduction______________
+intro
+Objects Intro
+How to access the prop of Objects
+How ot creat ethe objects
+How to manipulat eobjects
+  - constructor
+  	-types of constructor
+  	-creating constructor
+  	-constructor oberloading
+  	-calling a constructor rom another constructor
+Why we dont use th "new" keyowrd for primitives
+Wrapper classes
+Final Keyword
+Garbage Collection
+
+
+----------------OOPs 2--------------------
+__ Packages, Static, Singleton class, inbuilt methods __________
+- Packages
+- import statements
+- Non static inside static 
+- Static inside Non static
+- Initialisation of static variable
+- inner classes
+- internal wordking of some statements
+- singleton class
+- 
+
+----------------OOPs 3-------------------- 
+____ Principles -> Inheritance, Polymorphism, ENcapsulation, Abstraction ________
+- Inheritance
+	- private keyword
+	- super keyword
+	- types of inheritance (5 types)
+- Polymorphism
+	- types
+- how overloading works
+	-how java determines which method (Dynamic mehtod dispatch)
+
+- Final Keyword
+	-uses
+- Encapsulation
+- Abstraction
+- Data Hiding
+	- data hiding vs encapsulation
+
+----------------OOPs 4-------------------- 
+______ Access COntrol, in build paackages, Object class, scop of argument ______
+- private, public and protected
+	- when to use which
+	- what about friend function
+	- imp points for protected modifier
+
+- Packages (more info)
+	- types
+	- commonly used packages
+
+- object class
+- object method
+- "instanceOf operator"
+- "getClass method"
+
+----------------OOPs 5-------------------- 
+________ Abstract Classes and Interfaces ____
+- Abstract class
+	- what is abstract
+	- why abstract 
+	- problem wiht multiple inheritance
+	- final keyword in abstract class
+
+- Interfaces
+	- separate classes and same interface
+	- Extends Interface
+
+- Anotations
+- imp point regarding static interface method
+	- call by the interace name
+
+- interface vs abstract class
+
+----------------OOPs 6-------------------- 
+____ Generics, Custom Arraylist, Lambda Expression, Exveption Handling< Object Cloning _____
+- Custom Arraylist
+	- explation with code
+	- prob w/ custom arraylist
+	- custom arraylist using generics
+	- Working wiht generics
+	- code of Custom Arraylist w/ generics
+	- using java wildcard
+
+- comparison objects
+- lambda function
+- Exeption Handling
+	- exception handling keywords (try catch & finally)
+	- how to Explicit thow exception
+	
+- creating custom exception
+- object cloning
+- shallow * deep copy
+
+----------------OOPs 7-------------------- 
+____ Collection Framework, vector class, Enum in java _____
+- collection frameowork
+	- understanding collection framwork
+- vector class
+	-vector vs arraylist
+	- vector explain nd ex with code
+
+- enum in java
+
+	- enum injeritance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

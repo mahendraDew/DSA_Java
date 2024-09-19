@@ -4,40 +4,42 @@ import java.util.Scanner;
 
 public class BT_att3 {
     public BT_att3(){}
-    private class Node{
-        int value;
-        Node left; 
-        Node right;
+
+    public class Node {
+        private int value;
+        private Node left;
+        private Node right;
         public Node(int value){
             this.value = value;
         }
     }
+
     private Node root;
     
     public void populate(Scanner sc){
-        System.out.print("Enter the root node value: ");
-        int rootVal = sc.nextInt();
-        root = new Node(rootVal);
+        System.out.print("Enter the root node val: ");
+        int val = sc.nextInt();
+        root = new Node(val);
         populate(sc, root);
     }
     private void populate(Scanner sc, Node node){
-        System.out.print("Do you want to insert left of " + node.value +"?(true/false):");
+        System.out.print("Do you want to insert left of "+ node.value + ":");
         boolean left = sc.nextBoolean();
         if(left){
-            System.out.print("Enter the left of the node " + node.value + ":");
-            int leftVal = sc.nextInt();
-            node.left = new Node(leftVal);
+            System.out.print("Enter the left value of "+node.value+":");
+            int value = sc.nextInt();
+            node.left = new Node(value);
             populate(sc, node.left);
         }
-        System.out.print("Do you want to insert right of " + node.value +"?(true/false):");
+        
+        System.out.print("Do you want to insert right of "+ node.value + ":");
         boolean right = sc.nextBoolean();
         if(right){
-            System.out.print("Enter the right of the node " + node.value + ":");
-            int rightVal = sc.nextInt();
-            node.right = new Node(rightVal);
+            System.out.print("Enter the right value of "+node.value+":");
+            int value = sc.nextInt();
+            node.right = new Node(value);
             populate(sc, node.right);
         }
-
     }
 
     public void display(){
@@ -48,15 +50,14 @@ public class BT_att3 {
             return;
         }
         System.out.println(indent + node.value);
-        display(node.left, indent + "\t");
-        display(node.right, indent + "\t");
+        display(node.left , indent+"\t");
+        display(node.right , indent+"\t");
     }
 
-
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         BT_att3 bt = new BT_att3();
+        Scanner sc = new Scanner(System.in);
         bt.populate(sc);
-        bt.display();
+        bt.display();    
     }
 }
